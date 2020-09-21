@@ -11,6 +11,15 @@ void CreateBoard(std::string board[BOARD_SIZE][BOARD_SIZE]){
     }
 }
 
+void DisplayBoard(std::string b[][BOARD_SIZE], int size){
+    for(int y = 0; y < size; ++y){
+        for(int x = 0; x < size; ++x){
+            std::cout << b[x][y];
+        }
+        std::cout << std::endl;
+    }
+}
+
 
 int main(){
 
