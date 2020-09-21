@@ -14,7 +14,8 @@ void CreateBoard(std::string board[BOARD_SIZE][BOARD_SIZE]){
 
 int main(){
 
-
+    std::string board[BOARD_SIZE][BOARD_SIZE];
+    CreateBoard(board);
 
     return 0;
 }
