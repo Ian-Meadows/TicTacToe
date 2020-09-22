@@ -20,6 +20,14 @@ void DisplayBoard(std::string board[BOARD_SIZE][BOARD_SIZE]){
     }
 }
 
+void PlaceMarker(std::string board[BOARD_SIZE][BOARD_SIZE], int x, int y, std::string marker){
+    if(x < 0 || y < 0 || x >= BOARD_SIZE || y >= BOARD_SIZE ){
+        std::cout << "Not a valid location" << std::endl;
+        return;
+    }
+    board[x][y] = marker;
+}
+
 
 int main(){
 
