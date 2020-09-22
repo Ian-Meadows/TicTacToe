@@ -16,14 +16,17 @@ void CreateBoard(std::string board[BOARD_SIZE][BOARD_SIZE]){
     }
 }
 
-void DisplayBoard(std::string b[][BOARD_SIZE], int size){
-    for(int y = 0; y < size; ++y){
-        for(int x = 0; x < size; ++x){
-            std::cout << b[x][y];
+
+
+void DisplayBoard(std::string board[BOARD_SIZE][BOARD_SIZE]){
+    for(int y = 0; y < BOARD_SIZE; ++y){
+        for(int x = 0; x < BOARD_SIZE; ++x){
+            std::cout << board[x][y];
         }
         std::cout << std::endl;
     }
 }
+
 
 Point GetPlayerChoice(){
     bool hasInput = false;
@@ -52,7 +55,15 @@ Point GetPlayerChoice(){
         
     }
     return (Point){-1, -1};
+}
     
+
+void PlaceMarker(std::string board[BOARD_SIZE][BOARD_SIZE], int x, int y, std::string marker){
+    if(x < 0 || y < 0 || x >= BOARD_SIZE || y >= BOARD_SIZE ){
+        std::cout << "Not a valid location" << std::endl;
+        return;
+    }
+    board[x][y] = marker;
 }
 
 
