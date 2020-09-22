@@ -45,7 +45,7 @@ Point GetPlayerChoice(){
         std::cout << std::endl;
 
         if(x < 0 || y < 0 || x >= BOARD_SIZE || y >= BOARD_SIZE){
-            std::cout << "Not a valid location" << std::endl;
+            std::cout << "Not a valid location. try again" << std::endl;
         }
         else{
             hasInput = true;
@@ -71,6 +71,26 @@ int main(){
 
     std::string board[BOARD_SIZE][BOARD_SIZE];
     CreateBoard(board);
+
+    for(int i = 0; i < 9; ++i){
+        DisplayBoard(board);
+        if(i%2 == 0){
+            std::cout << std::endl;
+            std::cout << "Player 1's turn" << std::endl;
+            Point point = GetPlayerChoice();
+            PlaceMarker(board, point.x, point.y, "X");
+        }
+        else{
+            std::cout << std::endl;
+            std::cout << "Player 2's turn" << std::endl;
+            Point point = GetPlayerChoice();
+            PlaceMarker(board, point.x, point.y, "O");
+        }
+    }
+
+    DisplayBoard(board);
+
+    
 
     return 0;
 }
