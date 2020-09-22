@@ -1,0 +1,75 @@
+---
+---
+---
+
+Player 1's turn
+X position for marker: 0
+Y position for marker: 0
+
+X--
+---
+---
+
+Player 2's turn
+X position for marker: 0
+Y position for marker: 1
+
+X--
+O--
+---
+
+Player 1's turn
+X position for marker: 1
+Y position for marker: 0
+
+XX-
+O--
+---
+
+Player 2's turn
+X position for marker: 2
+Y position for marker: 0
+
+XXO
+O--
+---
+
+Player 1's turn
+X position for marker: 1
+Y position for marker: 1
+
+XXO
+OX-
+---
+
+Player 2's turn
+X position for marker: 2
+Y position for marker: 2
+
+XXO
+OX-
+--O
+
+Player 1's turn
+X position for marker: 2
+Y position for marker: 1
+
+XXO
+OXX
+--O
+
+Player 2's turn
+X position for marker: 0
+Y position for marker: 2
+
+XXO
+OXX
+O-O
+
+Player 1's turn
+X position for marker: 1
+Y position for marker: 2
+
+XXO
+OXX
+OXO
